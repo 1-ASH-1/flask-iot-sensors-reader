@@ -1,0 +1,31 @@
+html,body{
+
+	height: 99vh;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(33, 33, 33);
+}
+
+
+
+
+.root{
+	border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.children{
+	flex-wrap: wrap;
+gap: 50px;
+		border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+
+
+
