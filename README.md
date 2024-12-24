@@ -19,17 +19,15 @@ Through this project, you can easily read the sensors of your devices with the p
   ### back end
 
    **There are two essential things for running the project smoothly and reading the sensors to suit your needs**
-   1. on helpers.py file ther is function called ```connect_devise``` we will use that function to get sensors values using tinytuya module
-   that function you can edit it if u know how to coding and add your other iot devices and if u use tinytuya devise keep it 
-   and will be better if u return dict from it later we know why
-    ![image](https://github.com/user-attachments/assets/b78c1301-758c-4816-8af7-06b421806c69)
+   1. In the helpers.py file, there is a function called connect_device. We will use this function to retrieve sensor values using the tinytuya module.
+      You can edit that function if you know how to code and add other IoT devices. If you are using a tinytuya device, keep it as is. It would be better to return a          dictionary from the function, and later we will explain why.
+      
+      ![image](https://github.com/user-attachments/assets/b78c1301-758c-4816-8af7-06b421806c69)
 
   
-   2. on main.py file there is route called api when u call it from front end will get json format includes the keys you set
-      as devices and values on it so you can work that dict returned as json like list of devices and ```connect_devise``` used 
-      to call the calues into that key
+   3. In the main.py file, there is a route called api. When you call it from the frontend, it will return a JSON response that includes the keys you've set as devices and their corresponding values. You can work with this dictionary, which is returned in JSON format, as a list of devices. The connect_device function is used to retrieve the values for each key.
 
-        for example i have set the keys like that
+For example, I have set the keys like this:
         
       ![image](https://github.com/user-attachments/assets/84150e4f-1164-4e38-8712-1b0305c9127c)
 
@@ -51,22 +49,18 @@ Through this project, you can easily read the sensors of your devices with the p
 
 
   ### front end
-   on front end we will use free html template of my made using chart.js and some css
-   so to make it easy for u you will find the part on static/index/front_end_reader.js  
-   wich keep sending requests to api route to get our devices values wich looks like that
+On the frontend, we will use a free HTML template that I created using Chart.js and some custom CSS. To make it easier for you, you will find the relevant part in static/index/front_end_reader.js, which continuously sends requests to the api route to get the device values. The response from the API will look like this:
      
    ![image](https://github.com/user-attachments/assets/e20ef63c-7122-4d8a-91d4-8e3aa97750d1)
 
-  i know you are convisued let me explane
-  the code above is part of my read for device tuya AS90W
-  so your code will be like that
+I know you might be confused, so let me explain.
+The code above is part of my method to read the device Tuya AS90W.
+Your code will look like this:
   
   ![image](https://github.com/user-attachments/assets/dfe82a61-4b41-48a2-b69b-8022cfc86e57)
 
   
-  so now you can use the devices json respone to do somethings with ur values
-  to make it easy for u i made  javescript method called update that take the html chart div id of ur read sansor 
-  and the value
+Now, you can use the devices' JSON response to work with your values. To make it easier for you, I created a JavaScript method called update that takes the HTML chart div ID of your read sensor and the corresponding value.
 
      update(chartid,value)
 
