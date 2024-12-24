@@ -19,13 +19,13 @@ Through this project, you can easily read the sensors of your devices with the p
   ### back end
 
    **There are two essential things for running the project smoothly and reading the sensors to suit your needs**
-   1. In the helpers.py file, there is a function called connect_device. We will use this function to retrieve sensor values using the tinytuya module.
+   - In the helpers.py file, there is a function called connect_device. We will use this function to retrieve sensor values using the tinytuya module.
       You can edit that function if you know how to code and add other IoT devices. If you are using a tinytuya device, keep it as is. It would be better to return a          dictionary from the function, and later we will explain why.
       
       ![image](https://github.com/user-attachments/assets/b78c1301-758c-4816-8af7-06b421806c69)
 
   
-   3. In the main.py file, there is a route called api. When you call it from the frontend, it will return a JSON response that includes the keys you've set as devices and their corresponding values. You can work with this dictionary, which is returned in JSON format, as a list of devices. The connect_device function is used to retrieve the values for each key.
+   - In the main.py file, there is a route called api. When you call it from the frontend, it will return a JSON response that includes the keys you've set as devices and their corresponding values. You can work with this dictionary, which is returned in JSON format, as a list of devices. The connect_device function is used to retrieve the values for each key.
 
 For example, I have set the keys like this:
         
@@ -49,7 +49,7 @@ For example, I have set the keys like this:
 
 
   ### front end
-On the frontend, we will use a free HTML template that I created using Chart.js and some custom CSS. To make it easier for you, you will find the relevant part in static/index/front_end_reader.js, which continuously sends requests to the api route to get the device values. The response from the API will look like this:
+   - On the frontend, we will use a free HTML template that I created using Chart.js and some custom CSS. To make it easier for you, you will find the relevant part in static/  index/front_end_reader.js, which continuously sends requests to the api route to get the device values. The response from the API will look like this:
      
    ![image](https://github.com/user-attachments/assets/e20ef63c-7122-4d8a-91d4-8e3aa97750d1)
 
