@@ -29,22 +29,22 @@ Through this project, you can easily read the sensors of your devices with the p
 
 For example, I have set the keys like this:
         
-      ![image](https://github.com/user-attachments/assets/84150e4f-1164-4e38-8712-1b0305c9127c)
+   ![image](https://github.com/user-attachments/assets/84150e4f-1164-4e38-8712-1b0305c9127c)
 
 
         
-         the respone from browser will be like
+   the respone from browser will be like
            
-         ![image](https://github.com/user-attachments/assets/9a80e0cf-f5f7-4c89-95a8-5bf636899b9a)
-         or
-         ![image](https://github.com/user-attachments/assets/86448d46-8cbb-4f26-aa63-5b59e3a9441a)
+   ![image](https://github.com/user-attachments/assets/9a80e0cf-f5f7-4c89-95a8-5bf636899b9a)
+   or
+   ![image](https://github.com/user-attachments/assets/86448d46-8cbb-4f26-aa63-5b59e3a9441a)
 
 
 
            
 
 
-        **Note: the respone format depens on what you return from connect_devise function to based on tinytuya module its will return dict to us wich is will be json when returned using flask route**
+   **Note:The response format depends on what you return from the connect_device function. Based on the tinytuya module, it will return a dictionary, which will be converted to JSON when returned via the Flask route.**
 
 
 
